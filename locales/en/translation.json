@@ -1,0 +1,30 @@
+{
+    "header": {
+        "title": "Invisible Internet Project:",
+        "slogan": "Network without borders",
+        "p1": "We are building network which helps people to communicate and share information without restrictions.",
+        "p2": "Free from censorship. Free from privacy violations.",
+        "dl-btn": "Download",
+        "dl-btn-windows": "Download for Windows",
+        "dl-btn-android": "Download for Android",
+        "dl-all": "All downloads",
+        "docs": "Documentation"
+    },
+    "content": {
+        "how": {
+            "title": "How Invisible Internet works?",
+            "p1": "I2P (Invisible Internet Project) is anonymous network which works on top of public Internet.",
+            "p2": "Privacy and anonymity are achieved by strong encryption and bouncing your traffic through thousands of I2P nodes all around the world.",
+            "p3": "Nobody can track your activities inside Invisible Internet.",
+            "p4": "If you are interested in deeper technical details, visit",
+            "details": "this page"
+        },
+        "support": {
+            "title": "Let's make the world a better place",
+            "p1": "I2P runs and is developed by people like you.",
+            "p2": "You can help to protect our civil rights online, just run I2P node 24/7 and spread the word!",
+            "donate-link": "Support with coins",
+            "donate-text": "Donations for Purple I2P developing:"
+        }
+    }
+}
