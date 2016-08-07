@@ -27,9 +27,15 @@ function renderReleaseInfo(release) {
             all_dls.show();
         }
     } else if (window.navigator.userAgent.toUpperCase().indexOf("ANDROID") !== -1) {
-        dl_btn.text(i18next.t("header.dl-btn-android"));
-        dl_btn.attr("href", "https://play.google.com/store/apps/details?id=net.i2p.android");
-        all_dls.show();
+        var droid_asset = release.assets.filter(function(a) { 
+            if (a.name.toUpperCase().indexOf("ANDROID") !== -1) return true;
+        });
+
+        if (droid_asset.length > 0) {
+            dl_btn.text(i18next.t("header.dl-btn-android"));
+            dl_btn.attr("href", droid_asset[0].browser_download_url);
+            all_dls.show();
+        }
     } else {
         dl_btn.text(i18next.t("header.dl-btn"));
     }
