@@ -1,6 +1,6 @@
 {
     "header": {
-        "title": "Invisible Internet Project:",
+        "title": "Invisible Internet Protocol:",
         "slogan": "Network without borders",
         "p1": "We are building network which helps people to communicate and share information without restrictions.",
         "p2": "Free from censorship. Free from privacy violations.",
@@ -12,10 +12,10 @@
     },
     "content": {
         "how": {
-            "title": "How Invisible Internet works?",
-            "p1": "I2P (Invisible Internet Project) is anonymous network which works on top of public Internet.",
-            "p2": "Privacy and anonymity are achieved by strong encryption and bouncing your traffic through thousands of I2P nodes all around the world.",
-            "p3": "Nobody can track your activities inside Invisible Internet.",
+            "title": "i2pd (I2P Daemon) is a full-featured C++ implementation of I2P client",
+            "p1": "I2P (Invisible Internet Protocol) is a universal anonymous network layer. All communications over I2P are anonymous and end-to-end encrypted, participants don't reveal their real IP addresses.",
+            "p2": "I2P client is a software used for building and using anonymous I2P networks. Such networks are commonly used for anonymous peer-to-peer applications (filesharing, cryptocurrencies) and anonymous client-server applications (websites, instant messengers, chat-servers).",
+            "p3": "I2P allows people from all around the world to communicate and share information without restrictions.",
             "p4": "If you are interested in deeper technical details, visit",
             "details": "this page"
         },
