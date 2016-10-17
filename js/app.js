@@ -18,7 +18,7 @@ function renderReleaseInfo(release) {
 
     if (window.navigator.platform.toUpperCase().startsWith("WIN")) {
         var win_asset = release.assets.filter(function(a) { 
-            if (a.name.endsWith("win32_mingw.zip")) return true;
+            if (a.name.startsWith("setup_i2pd")) return true;
         });
 
         if (win_asset.length > 0) {
