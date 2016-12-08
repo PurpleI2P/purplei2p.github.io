@@ -183,7 +183,7 @@ a {color: #800080; text-decoration: none;}
 a:hover {color: #A020B0;}
 
 .container {text-align: center;}
-.header {padding: 40px; background: #800080;}
+.header {padding: 40px; height: calc(100vh - 80px); background: #800080;}
 .download {margin-top: 20px;}
 
 #dl-btn {
