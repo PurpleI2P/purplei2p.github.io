@@ -184,6 +184,7 @@ a:hover {color: #A020B0;}
 
 .container {text-align: center;}
 .header {padding: 40px; height: calc(100vh - 80px); background: #800080;}
+.header .align-center { position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); width: 80%; }
 .download {margin-top: 20px;}
 
 #dl-btn {
