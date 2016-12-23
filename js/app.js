@@ -23,8 +23,6 @@ function renderReleaseInfo(release) {
         });
 
         if (win_asset.length > 0) {
-            if (window.navigator.userAgent.indexOf("Trident") === -1) // IE is fucked
-                dl_btn.text(i18next.t("header.dl-btn-windows"));
             dl_btn.attr("href", win_asset[0].browser_download_url);
             all_dls.show();
         }
@@ -45,6 +43,9 @@ function renderReleaseInfo(release) {
     }
 }
 
+if (window.navigator.userAgent.indexOf("Trident") === -1) // IE is fucked
+{
+    
 i18next
     .use(i18nextBrowserLanguageDetector)
     .use(i18nextXHRBackend)
@@ -60,3 +61,5 @@ i18next
             $.getJSON(url, renderReleaseInfo);
         }
     );
+
+}
