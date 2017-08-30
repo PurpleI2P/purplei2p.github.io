@@ -172,26 +172,34 @@ table {
 html, body {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
-    background: #BB32FF;
+    background: #800080;
     color: #EFDFFF;
+    text-shadow: 1px 1px 3px black;
 }
 
 h1, h2, p {padding: 10px;}
-h1 {font-size: 2em;}
-h2 {font-size: 1.5em;}
-a {color: #800080; text-decoration: none;}
-a:hover {color: #A020B0;}
+h1 {font-size: 3em;}
+h2 {font-size: 2em;}
+a {color: gold; text-decoration: none;}
+a:hover {color: lightgrey;}
 
 .container {text-align: center;}
-.header {padding: 40px; height: calc(100vh - 80px); background: #800080;}
-.align-center { position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); }
-.header .align-center { width: 80%; }
+.header {
+    padding: 40px;
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    border-bottom: 1px #EFDFFF solid;
+}
 .download {margin-top: 20px;}
 
 #dl-btn {
     font-size: 1.5em;
     background: #C145FF; display: inline-block;
     padding: 25px; margin: 10px;
+    text-shadow: none;
+}
+#dl-btn:hover {
+    background: #C859FF;
 }
 
 .header a { padding: 15px; color: #EFDFFF;}
@@ -199,12 +207,15 @@ a:hover {color: #A020B0;}
 
 .content {
     padding: 40px;
-    border-top: 1px #EFDFFF solid;
-}
-.content p {
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
     font-size: 0.8em;
+    line-height: 150%;
+    text-align: justify;
+}
+
+@media only screen and (max-device-width: 600px) {
+    .content { text-align: left; }
 }
 
 #donations {display: none;}
@@ -217,4 +228,6 @@ a:hover {color: #A020B0;}
     margin-bottom: 30px;
 }
 
+.links { text-align: center; }
 .links a {font-size: 1.2em; padding: 10px;}
+.links img {max-height: 50px;}
