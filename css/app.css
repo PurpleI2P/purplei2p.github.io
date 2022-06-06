@@ -1,9 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
- :root {
+:root {
 	--bg: #0A0A0A;
 	--color1: #C145FF;
 	--color2: #E7B6FF;
@@ -22,8 +22,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -34,7 +34,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -203,7 +203,7 @@ a:hover {color: lightgrey;}
 
 #dl-btn {
 	font-size: 1.5em;
-	color: var(--bg); 
+	color: var(--bg);
 	background: var(--color1); display: inline-block;
 	border: 5px var(--color1) solid;
 	padding: 25px; margin: 10px;
@@ -214,7 +214,7 @@ a:hover {color: lightgrey;}
 	color: var(--color1);
 }
 
-.header a { padding: 15px; color: var(--color1);}
+.header a {padding: 15px; color: var(--color1);}
 .header a:hover {color: #FFFFFF;}
 
 .content {
@@ -230,7 +230,7 @@ a:hover {color: lightgrey;}
 	.content { text-align: left; }
 }
 
-#donations {display: none;}
+#donations {display: none; overflow-wrap: break-word;}
 #donations:target {display: block;}
 .p-hr {
 	border-top: 5px var(--color1) solid;
@@ -243,3 +243,7 @@ a:hover {color: lightgrey;}
 .links { color: var(--color1);  text-align: center; }
 .links a {font-size: 1.2em; padding: 10px; color: var(--color1); }
 .links img {max-height: 50px;color: var(--color1); }
+
+@media screen and (max-width: 980px) {
+	.header a {display: block;}
+}
