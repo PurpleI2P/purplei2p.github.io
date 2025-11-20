@@ -214,6 +214,11 @@ a:hover {color: lightgrey;}
 	color: var(--color1);
 }
 
+#locale {
+	text-align: left;
+	position: absolute;
+}
+
 .header a {padding: 15px; color: var(--color1);}
 .header a:hover {color: #FFFFFF;}
 

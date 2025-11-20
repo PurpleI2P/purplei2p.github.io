@@ -8,6 +8,18 @@
 		<link rel="prefetch" type="application/l10n" href="locales/data.ini" />
 		<script defer src="js/l10n.js"></script>
 		<script src="js/app.js"></script>
+		<script type="text/javascript">
+			window.addEventListener('localized', function() {
+				var l10n = document.webL10n,
+				ui = {
+					lang: document.getElementById('locale').getElementsByTagName('select')[0]
+				};
+				ui.lang.value = l10n.getLanguage();
+				ui.lang.onchange = function() {
+					l10n.setLanguage(this.value || this.options[this.selectedIndex].text);
+				};
+			}, false);
+		</script>
 		<link rel="icon" type="image/png" href="images/favicon.png" />
 		<meta name="yandex-verification" content="b50a274d8f4a99cd" />
 	</head>
@@ -15,6 +27,22 @@
 		<a class="github-fork-ribbon" href="https://github.com/PurpleI2P/i2pd"
 			title="Fork me on GitHub">Fork me on GitHub</a>
 		<div class="container">
+			<p id="locale">
+				<span data-l10n-id="lang-select">Language selection:</span>
+				<select>
+					<option disabled selected> </option>
+					<option value="en-us">English</option>
+					<option value="es">Español</option>
+					<option value="fr">Français</option>
+					<option value="it">Italiano</option>
+					<option value="pt">Português</option>
+					<option value="ru">Русский язык</option>
+					<option value="tr">Türk dili</option>
+					<option value="uk">Украї́нська мо́ва</option>
+					<option value="uz">Oʻzbek</option>
+					<option value="zh-cn">简体字</option>
+				</select>
+			</p>
 			<div class="header">
 				<div class="align-center">
 					<img src="images/favicon.png" id="logo">
